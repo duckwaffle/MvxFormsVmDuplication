@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using MvvmCross.Core.ViewModels;
-using MvxFormsVmDuplication.ViewModels;
+﻿using MvvmCross.Core.ViewModels;
+using MvxFormsVmDuplication.Core.ViewModels;
 
-namespace MvxFormsVmDuplication
+namespace MvxFormsVmDuplication.Core
 {
     public class App : MvxApplication
     {

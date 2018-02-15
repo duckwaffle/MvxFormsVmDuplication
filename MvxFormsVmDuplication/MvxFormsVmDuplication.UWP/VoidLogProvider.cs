@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,21 +10,21 @@ namespace MvxFormsVmDuplication.UWP
 {
     public class VoidLogProvider : IMvxLogProvider
     {
-        private readonly EmptyVoidLog _voidLog;
+        private readonly EmptyVoidLog voidLog;
 
         public VoidLogProvider()
         {
-            _voidLog = new EmptyVoidLog();
+            voidLog = new EmptyVoidLog();
         }
 
         public IMvxLog GetLogFor<T>()
         {
-            return _voidLog;
+            return voidLog;
         }
 
         public IMvxLog GetLogFor(string name)
         {
-            return _voidLog;
+            return voidLog;
         }
 
         public IDisposable OpenNestedContext(string message)
@@ -40,6 +41,7 @@ namespace MvxFormsVmDuplication.UWP
         {
             public bool Log(MvxLogLevel logLevel, Func<string> messageFunc, Exception exception = null, params object[] formatParameters)
             {
+                Debug.WriteLine(messageFunc(), formatParameters);
                 return true;
             }
         }

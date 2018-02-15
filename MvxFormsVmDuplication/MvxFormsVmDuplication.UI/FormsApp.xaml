@@ -2,10 +2,16 @@
 <platform:MvxFormsApplication xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:platform="clr-namespace:MvvmCross.Forms.Platform;assembly=MvvmCross.Forms"
-             x:Class="MvxFormsVmDuplication.FormsApp">
+             xmlns:resources="clr-namespace:MvxFormsVmDuplication.UI.Resources;assembly=MvxFormsVmDuplication.UI"
+             x:Class="MvxFormsVmDuplication.UI.FormsApp">
 	<Application.Resources>
 
 		<!-- Application resource dictionary -->
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <resources:GlobalResources />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
 
 	</Application.Resources>
 </platform:MvxFormsApplication>

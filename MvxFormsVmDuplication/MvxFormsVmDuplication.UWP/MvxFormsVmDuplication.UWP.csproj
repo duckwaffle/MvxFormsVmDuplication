@@ -160,10 +160,17 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.0.6" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MvxFormsVmDuplication\MvxFormsVmDuplication.csproj">
-      <Project>{8C03EA10-4BDB-4517-91B3-0767B55CCC78}</Project>
-      <Name>MvxFormsVmDuplication</Name>
+    <ProjectReference Include="..\MvxFormsVmDuplication.Core\MvxFormsVmDuplication.Core.csproj">
+      <Project>{22309e49-1510-4539-8ab8-a8c4ae7cb642}</Project>
+      <Name>MvxFormsVmDuplication.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MvxFormsVmDuplication.UI\MvxFormsVmDuplication.UI.csproj">
+      <Project>{185B7CC7-9023-4CF7-923F-9F6523A2D509}</Project>
+      <Name>MvxFormsVmDuplication.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

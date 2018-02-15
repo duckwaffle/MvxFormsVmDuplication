@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using MvvmCross.Core.ViewModels;
 
-namespace MvxFormsVmDuplication.ViewModels
+namespace MvxFormsVmDuplication.Core.ViewModels
 {
-    public class HomeViewModel : MvxViewModel
+    public class NextViewModel : MvxViewModel
     {
     }
 }

@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>MvxFormsVmDuplication.Droid</RootNamespace>
     <AssemblyName>MvxFormsVmDuplication.Android</AssemblyName>
-    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -62,7 +62,6 @@
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Setup.cs" />
-    <Compile Include="SplashScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -85,9 +84,13 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MvxFormsVmDuplication\MvxFormsVmDuplication.csproj">
-      <Project>{8C03EA10-4BDB-4517-91B3-0767B55CCC78}</Project>
-      <Name>MvxFormsVmDuplication</Name>
+    <ProjectReference Include="..\MvxFormsVmDuplication.Core\MvxFormsVmDuplication.Core.csproj">
+      <Project>{22309e49-1510-4539-8ab8-a8c4ae7cb642}</Project>
+      <Name>MvxFormsVmDuplication.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MvxFormsVmDuplication.UI\MvxFormsVmDuplication.UI.csproj">
+      <Project>{185B7CC7-9023-4CF7-923F-9F6523A2D509}</Project>
+      <Name>MvxFormsVmDuplication.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

@@ -25,11 +25,11 @@ namespace MvxFormsVmDuplication.UWP
 
         protected override IEnumerable<Assembly> GetViewAssemblies()
         {
-            return new List<Assembly>(base.GetViewAssemblies().Union(new[] { typeof(FormsApp).GetTypeInfo().Assembly }));
+            return new List<Assembly>(base.GetViewAssemblies().Union(new[] { typeof(UI.FormsApp).GetTypeInfo().Assembly }));
         }
 
-        protected override MvxFormsApplication CreateFormsApplication() => new FormsApp();
+        protected override MvxFormsApplication CreateFormsApplication() => new UI.FormsApp();
 
-        protected override IMvxApplication CreateApp() => new MvxFormsVmDuplication.App();
+        protected override IMvxApplication CreateApp() => new Core.App();
     }
 }
